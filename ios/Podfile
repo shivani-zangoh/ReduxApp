@@ -38,7 +38,7 @@ target 'reduxApp' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
-
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
   target 'reduxAppTests' do
     inherit! :complete
     # Pods for testing
